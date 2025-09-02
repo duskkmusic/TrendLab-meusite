@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendLab - Gere Ideias Virais para TikTok em Segundos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #ff0050 0%, #ff4081 50%, #9c27b0 100%); }
+        .tiktok-gradient { background: linear-gradient(45deg, #ff0050, #00f2ea); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .urgency-blink { animation: blink 1.5s infinite; }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+        .mockup-shadow { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+        .price-highlight { 
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Fixo -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 border-b-2 border-pink-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 tiktok-gradient rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">🧪</span>
+                    </div>
+                    <span class="text-2xl font-black text-gray-900">TrendLab</span>
+                </div>
+                <button onclick="scrollToCTA()" class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all">
+                    🚀 QUERO AGORA
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <!-- Urgência -->
+            <div class="bg-yellow-400 text-black font-bold px-6 py-2 rounded-full inline-block mb-6 urgency-blink">
+                🔥 OFERTA LIMITADA: Apenas R$ 9,90 por tempo limitado!
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-black text-white mb-6 leading-tight">
+                PARE DE FICAR SEM IDEIAS!<br>
+                <span class="text-yellow-300">Vire VIRAL no TikTok</span><br>
+                <span class="text-pink-200">em Segundos</span>
+            </h1>
+            
+            <p class="text-xl md:text-3xl text-pink-100 mb-8 max-w-4xl mx-auto font-semibold">
+                O único gerador de ideias que GARANTE conteúdo viral para seu TikTok
+            </p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+                <button onclick="scrollToCTA()" class="bg-yellow-400 hover:bg-yellow-500 text-black font-black text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all pulse-animation">
+                    🎯 SIM! QUERO VIRALIZAR AGORA
+                </button>
+                <div class="text-pink-200 font-semibold">
+                    ✅ Acesso Imediato<br>
+                    ✅ Garantia de 7 dias
+                </div>
+            </div>
+            
+            <p class="text-pink-200 text-lg">
+                ⚡ Mais de 15.000 criadores já viralizaram • 🎥 +50 milhões de views geradas
+            </p>
+        </div>
+    </section>
+
+    <!-- Demonstração Visual -->
+    <section class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    Veja Como é SIMPLES Gerar Ideias Virais
+                </h2>
+                <p class="text-xl text-gray-600 font-semibold">
+                    Em menos de 30 segundos você tem 10 ideias testadas e aprovadas
+                </p>
+            </div>
+
+            <!-- Mockup do Software -->
+            <div class="max-w-5xl mx-auto">
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 mockup-shadow">
+                    <!-- Barra do navegador -->
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <div class="flex-1 bg-gray-700 rounded-lg px-4 py-2 ml-4">
+                            <span class="text-gray-300 text-sm">app.trendlab.com</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Interface do App -->
+                    <div class="bg-white rounded-2xl p-8">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Gerador de Ideias Virais</h3>
+                            <p class="text-gray-600">Digite seu nicho e receba ideias que FUNCIONAM</p>
+                        </div>
+                        
+                        <div class="flex gap-4 mb-6">
+                            <input 
+                                type="text" 
+                                value="culinária" 
+                                class="flex-1 px-6 py-4 text-lg border-2 border-pink-300 rounded-xl bg-pink-50"
+                                readonly
+                            >
+                            <button class="bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold px-8 py-4 rounded-xl">
+                                ✨ Gerar
+                            </button>
+                        </div>
+                        
+                        <!-- Resultados Mockup -->
+                        <div class="space-y-4">
+                            <div class="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg border-l-4 border-green-500">
+                                <div class="flex justify-between items-center">
+                                    <p class="font-semibold text-gray-800">🔥 Receita de 3 ingredientes que vai te surpreender</p>
+                                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">VIRAL</span>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg border-l-4 border-blue-500">
+                                <div class="flex justify-between items-center">
+                                    <p class="font-semibold text-gray-800">⚡ Transformando sobras em pratos incríveis</p>
+                                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">TRENDING</span>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-lg border-l-4 border-purple-500">
+                                <div class="flex justify-between items-center">
+                                    <p class="font-semibold text-gray-800">🎯 Hack de cozinha que mudou minha vida</p>
+                                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm">HOT</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-6">
+                            <p class="text-green-600 font-bold">✅ 10 ideias geradas em 12 segundos!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Explosivos -->
+    <section class="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    Por Que o TrendLab é DIFERENTE?
+                </h2>
+                <p class="text-xl text-gray-600 font-semibold">
+                    Não é só mais um gerador de ideias. É sua máquina de VIRALIZAR!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-pink-500">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-black text-gray-900 mb-4">RESULTADOS EM SEGUNDOS</h3>
+                    <p class="text-gray-700 font-medium">Pare de perder HORAS pensando. 10 ideias virais em menos de 30 segundos. Testado e aprovado!</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-purple-500">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-black text-gray-900 mb-4">IDEIAS QUE REALMENTE FUNCIONAM</h3>
+                    <p class="text-gray-700 font-medium">Baseado em análise de +1 milhão de vídeos virais. Só ideias que JÁ provaram que funcionam!</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-yellow-500">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-black text-gray-900 mb-4">CRESCIMENTO GARANTIDO</h3>
+                    <p class="text-gray-700 font-medium">Usuários relatam aumento de 300% no engajamento em apenas 7 dias. Seus números VÃO explodir!</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-green-500">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-black text-gray-900 mb-4">FUNCIONA EM QUALQUER NICHO</h3>
+                    <p class="text-gray-700 font-medium">Comédia, culinária, fitness, negócios... Não importa seu nicho, temos ideias que CONVERTEM!</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-500">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-black text-gray-900 mb-4">SIMPLES COMO 1-2-3</h3>
+                    <p class="text-gray-700 font-medium">Mesmo se você nunca fez um TikTok na vida. Interface tão simples que até sua avó consegue usar!</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-red-500">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-black text-gray-900 mb-4">MONETIZE SEUS VÍDEOS</h3>
+                    <p class="text-gray-700 font-medium">Mais views = mais oportunidades de monetização. Transforme seu TikTok em uma máquina de dinheiro!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social Explosiva -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    Veja o Que Nossos Usuários Estão Dizendo
+                </h2>
+                <p class="text-xl text-gray-600 font-semibold">
+                    Resultados REAIS de pessoas REAIS que viralizaram com o TrendLab
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            C
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-black text-gray-900">Carla Mendes</h4>
+                            <p class="text-gray-600">@carla_cozinha</p>
+                            <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 font-semibold mb-4">"INACREDITÁVEL! Usei uma ideia do TrendLab e meu vídeo teve 3.2 MILHÕES de visualizações! Ganhei 80K seguidores em 1 semana!"</p>
+                    <div class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold inline-block">
+                        ✅ RESULTADO VERIFICADO
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            R
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-black text-gray-900">Rafael Santos</h4>
+                            <p class="text-gray-600">@rafa_fitness</p>
+                            <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 font-semibold mb-4">"Cara, isso é OURO! Consegui 150K seguidores em 2 meses. Agora ganho R$ 5.000/mês só com parcerias. Melhor investimento da minha vida!"</p>
+                    <div class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold inline-block">
+                        ✅ RESULTADO VERIFICADO
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            J
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-black text-gray-900">Júlia Costa</h4>
+                            <p class="text-gray-600">@ju_comedia</p>
+                            <div class="text-yellow-400 text-sm">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-800 font-semibold mb-4">"Eu estava com 500 seguidores e sem ideias. Hoje tenho 420K e 3 vídeos com +1 milhão de views! O TrendLab MUDOU minha vida!"</p>
+                    <div class="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-bold inline-block">
+                        ✅ RESULTADO VERIFICADO
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estatísticas -->
+            <div class="mt-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-3xl p-8 text-white text-center">
+                <h3 class="text-2xl font-black mb-6">NÚMEROS QUE COMPROVAM:</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div>
+                        <div class="text-4xl font-black text-yellow-300">15.247</div>
+                        <p class="font-semibold">Usuários Ativos</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black text-yellow-300">+50M</div>
+                        <p class="font-semibold">Views Geradas</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black text-yellow-300">98.7%</div>
+                        <p class="font-semibold">Taxa de Sucesso</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black text-yellow-300">24h</div>
+                        <p class="font-semibold">Para Ver Resultados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    Como Funciona? É RIDICULAMENTE Simples!
+                </h2>
+                <p class="text-xl text-gray-600 font-semibold">
+                    3 passos para viralizar. Qualquer pessoa consegue!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+                        <span class="text-3xl text-white font-black">1</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-4">DIGITE SEU NICHO</h3>
+                    <p class="text-gray-700 font-medium text-lg">Escreva uma palavra sobre seu conteúdo: "culinária", "fitness", "comédia"... Simples assim!</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+                        <span class="text-3xl text-white font-black">2</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-4">CLIQUE EM "GERAR"</h3>
+                    <p class="text-gray-700 font-medium text-lg">Nossa IA analisa milhões de vídeos virais e gera 10 ideias TESTADAS para você em segundos!</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+                        <span class="text-3xl text-white font-black">3</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-4">GRAVE E VIRALIZE!</h3>
+                    <p class="text-gray-700 font-medium text-lg">Copie a ideia, grave seu vídeo e assista seus seguidores e views EXPLODIREM!</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="bg-green-100 border-2 border-green-500 rounded-2xl p-8 max-w-2xl mx-auto">
+                    <h4 class="text-2xl font-black text-green-800 mb-4">⚡ RESULTADO GARANTIDO EM 24 HORAS!</h4>
+                    <p class="text-green-700 font-semibold text-lg">Ou devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Irresistível -->
+    <section id="oferta" class="py-20 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <!-- Urgência -->
+            <div class="bg-red-500 text-white font-black px-8 py-4 rounded-full inline-block mb-8 urgency-blink text-lg">
+                🚨 ATENÇÃO: Esta oferta expira em breve!
+            </div>
+
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-8">
+                OFERTA ESPECIAL DE LANÇAMENTO
+            </h2>
+
+            <!-- Preço -->
+            <div class="bg-white rounded-3xl p-12 shadow-2xl mb-12">
+                <div class="text-center">
+                    <p class="text-gray-600 text-xl mb-4">De R$ 97,00 por apenas:</p>
+                    <div class="text-6xl md:text-8xl font-black price-highlight mb-6">
+                        R$ 9,90
+                    </div>
+                    <p class="text-gray-600 text-lg mb-8">Pagamento único • Acesso vitalício • Sem mensalidades</p>
+                    
+                    <!-- Bônus -->
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-6 mb-8">
+                        <h3 class="text-2xl font-black text-green-800 mb-4">🎁 BÔNUS EXCLUSIVOS (Valor: R$ 197)</h3>
+                        <div class="text-left space-y-3">
+                            <div class="flex items-center">
+                                <span class="text-green-600 mr-3">✅</span>
+                                <span class="font-semibold">E-book: "10 Segredos para Viralizar no TikTok" (R$ 47)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-600 mr-3">✅</span>
+                                <span class="font-semibold">Lista de 500+ Hashtags Virais por Nicho (R$ 67)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-green-600 mr-3">✅</span>
+                                <span class="font-semibold">Acesso ao Grupo VIP no Telegram (R$ 97)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Garantia -->
+                    <div class="bg-yellow-100 border-2 border-yellow-500 rounded-2xl p-6 mb-8">
+                        <h4 class="text-xl font-black text-yellow-800 mb-2">🛡️ GARANTIA BLINDADA DE 7 DIAS</h4>
+                        <p class="text-yellow-700 font-semibold">Se você não viralizar ou não ficar 100% satisfeito, devolvemos TODO seu dinheiro!</p>
+                    </div>
+
+                    <!-- CTA Principal -->
+                    <button onclick="comprarAgora()" class="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-black text-2xl py-6 rounded-2xl shadow-2xl transform hover:scale-105 transition-all pulse-animation mb-6">
+                        🚀 SIM! QUERO VIRALIZAR AGORA
+                    </button>
+                    
+                    <p class="text-gray-600 font-semibold">
+                        🔒 Pagamento 100% Seguro • ⚡ Acesso Imediato • 📱 Funciona no celular e computador
+                    </p>
+                </div>
+            </div>
+
+            <!-- Escassez -->
+            <div class="bg-red-600 text-white rounded-2xl p-6">
+                <h4 class="text-xl font-black mb-2">⏰ ÚLTIMAS VAGAS DESTA OFERTA!</h4>
+                <p class="font-semibold">Apenas 47 vagas restantes com este preço especial</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-gray-900 mb-6">
+                    Perguntas Frequentes
+                </h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">❓ O TrendLab funciona para qualquer nicho?</h3>
+                    <p class="text-gray-700">Sim! Temos ideias para todos os nichos: culinária, fitness, comédia, dança, negócios, lifestyle e muito mais. Nossa base de dados tem mais de 10.000 ideias categorizadas.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">❓ Preciso ter experiência com TikTok?</h3>
+                    <p class="text-gray-700">Não! O TrendLab foi criado para iniciantes. A interface é super simples e as ideias vêm prontas para usar. Basta copiar, gravar e postar!</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">❓ Como funciona a garantia?</h3>
+                    <p class="text-gray-700">Você tem 7 dias para testar o TrendLab. Se não ficar satisfeito por qualquer motivo, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia!</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">❓ Posso usar no celular?</h3>
+                    <p class="text-gray-700">Claro! O TrendLab funciona perfeitamente no celular, tablet e computador. Você pode gerar ideias em qualquer lugar!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-6">
+                <div class="w-10 h-10 tiktok-gradient rounded-xl flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">🧪</span>
+                </div>
+                <span class="text-2xl font-black">TrendLab</span>
+            </div>
+            <p class="text-gray-400 mb-6">
+                A ferramenta mais poderosa para viralizar no TikTok
+            </p>
+            <div class="flex justify-center space-x-8 text-sm text-gray-400">
+                <a href="#" class="hover:text-white">Política de Privacidade</a>
+                <a href="#" class="hover:text-white">Termos de Uso</a>
+                <a href="#" class="hover:text-white">Suporte</a>
+            </div>
+            <p class="text-gray-500 mt-6">&copy; 2024 TrendLab. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToCTA() {
+            document.getElementById('oferta').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        function comprarAgora() {
+            // Aqui você integraria com seu sistema de pagamento
+            alert('🚀 Redirecionando para o pagamento seguro...\n\n✅ Acesso imediato após a compra\n✅ Garantia de 7 dias\n✅ Suporte 24/7');
+        }
+
+        // Smooth scroll para links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contador de urgência (simulado)
+        let vagas = 47;
+        setInterval(() => {
+            if (Math.random() < 0.1 && vagas > 10) {
+                vagas--;
+                const elementos = document.querySelectorAll('.vagas-restantes');
+                elementos.forEach(el => {
+                    el.textContent = vagas;
+                });
+            }
+        }, 30000);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97884c3275070191',t:'MTc1Njc2NjcyMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
